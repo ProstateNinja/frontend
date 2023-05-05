@@ -3,7 +3,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
+    <div className='pt-20'>
       <div>
         <div>What is Prostate Cancer ?</div>
         <div>
