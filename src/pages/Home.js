@@ -1,3 +1,4 @@
+import { Button, TextField } from '@mui/material'
 import React from 'react'
 
 function Home() {
@@ -24,7 +25,24 @@ function Home() {
           <br />
           Search below to browse thousand of Prostate Cancer Clinical Trials.
         </div>
+        <div>
+        <div>Find a Support Group near You</div>
+        <div>
+          <TextField label="enter location" />
+          <TextField label="enter location" />
+          <TextField label="enter location" />
+          <Button variant='contained'>Search</Button>
+        </div>
+        <Button variant='contained'>Search</Button>
       </div>
+      </div>
+      
+      <div>
+        <div>Find a Support Group near You</div>
+        <div><TextField label="enter location" /></div>
+        <Button variant='contained'>Search</Button>
+      </div>
+      
       <div className='grid grid-cols-3 gap-6 my-8' >
         {
           [1,1,1,1,1,1].map((item, index) => 
