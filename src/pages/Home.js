@@ -32,12 +32,12 @@ function Home() {
             <ArrowDownward className='animate-bounce' />
           </div>
         </div>
-        <div className='bg-slate-300 md:p-6' >
+        <div className='bg-slate-300 md:p-6 md:py-12' >
           <div className='max-w-6xl text-center mx-auto my-10 text-5xl font-bold' >Find clinical trials near You</div>
           <div className='flex flex-col lg:flex-row lg:space-x-5 w-fit mx-auto ' >
-            <TextField label="enter location" />
-            <TextField label="enter location" />
-            <TextField label="enter location" />
+            <TextField className='bg-white' label="enter location" />
+            <TextField className='bg-white' label="enter location" />
+            <TextField className='bg-white' label="enter location" />
             <Button variant='contained'>Search</Button>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Home() {
       <div className='bg-slate-100 md:p-6' >
           <div className='max-w-6xl text-center mx-auto my-10 text-5xl font-bold' >Find a support group near You</div>
           <div className='flex flex-col lg:flex-row lg:space-x-5 w-fit mx-auto ' >
-            <TextField label="enter location" />
+            <TextField className='bg-white' label="enter location" />
             <Button variant='contained'>Search</Button>
           </div>
         </div>

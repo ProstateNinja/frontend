@@ -1,30 +1,40 @@
 import { ArrowRight, ArrowRightAltSharp } from '@mui/icons-material'
+import { Button } from '@mui/material'
 import React from 'react'
 
 function About() {
   return (
-    <div>
-      <div>
-        <p>what is bskbjsf dfsdfdsfff </p>
-        <div>
-          Prostate cancer is the most common non-skin cancer in America. In the United Stated, 1 out of every 9 men will be diagnosed with prostate cancer in their lifetime.
+     <div className='pt-10'>
+      <div className='min-h-screen flex flex-col bg-slate-200 justify-center' >
+        <div className=' w-full max-w-5xl mx-auto'>
+          <div className='text-5xl mb-4' >Who are we ? </div>
+          <div className='text-3xl mb-4 font-extralight ' >
+            Est et do ea ea anim in tempor. Irure ea mollit minim laborum velit reprehenderit aute voluptate sit culpa sint sit in. Nostrud anim dolore labore labore Lorem consequat elit enim consequat excepteur aliquip dolor. Sint magna pariatur in consequat incididunt .
+          </div>
+          {/* <Button variant='contained' className='mt-4' >More</Button> */}
         </div>
       </div>
-      <div>
-        <div>Quick Links</div>
-        <div>Access The Information and Resources You Need</div>
-        <div>
-          <div>
+      <div className='w-[90%] m-auto md:p-10 ' >
+        <div className='text-4xl my-2' >Quick Links</div>
+        <div className='text-md font-extralight' >Access The Information and Resources You Need</div>
+        <div className='grid grid-cols-3 gap-10 my-10' >
+          <div className='flex justify-between border hover:bg-slate-200 transition duration-300 border-black rounded-md p-3 group' >
             <div>Find A  screening</div>
-            <ArrowRightAltSharp />
+            <span className=' transition duration-300 group-hover:-rotate-45' >
+              <ArrowRightAltSharp />
+            </span>
           </div>
-          <div>
+          <div className='flex justify-between border hover:bg-slate-200 transition duration-300 border-black rounded-md p-3 group' >
             <div>Find A  screening</div>
-            <ArrowRightAltSharp />
+            <span className=' transition duration-300 group-hover:-rotate-45' >
+              <ArrowRightAltSharp />
+            </span>
           </div>
-          <div>
+          <div className='flex justify-between border hover:bg-slate-200 transition duration-300 border-black rounded-md p-3 group' >
             <div>Find A  screening</div>
-            <ArrowRightAltSharp />
+            <span className=' transition duration-300 group-hover:-rotate-45' >
+              <ArrowRightAltSharp />
+            </span>
           </div>
         </div>
       </div>
