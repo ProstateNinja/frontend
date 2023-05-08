@@ -57,7 +57,7 @@ const Navbar = () => {
               Contact
             </li>
           </NavLink>
-          <NavLink onMouseEnter={() => { if(pathname!=='/about'){setNav2(false)}}} onMouseLeave={() => setNav2(true)} to='/about' className={({ isActive }) => (isActive && nav2 ? 'bg-[#EB1D50] border border-transparent border-l-[#EB1D50] text-white p-2 btn from-bottom' : ' border border-transparent border-l-gray-300  btn from-bottom p-2   ')} >
+          <NavLink onMouseEnter={() => { if(pathname!=='/screening'){setNav2(false)}}} onMouseLeave={() => setNav2(true)} to='/screening' className={({ isActive }) => (isActive && nav2 ? 'bg-[#EB1D50] border border-transparent border-l-[#EB1D50] text-white p-2 btn from-bottom' : ' border border-transparent border-l-gray-300  btn from-bottom p-2   ')} >
             <li className='px-4 py-2'>
             Find Screening
             </li>
@@ -99,7 +99,7 @@ const Navbar = () => {
             </li>
           </Link>
           <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link to='/'>Find Screening</Link>
+              <Link to='/screening'>Find Screening</Link>
             </li>
           </ul>
         </div>
