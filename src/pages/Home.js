@@ -5,10 +5,21 @@ import React from 'react'
 function Home() {
   return (
     <div className='pt-10'>
-      <div className='min-h-screen flex flex-col bg-slate-200 justify-center' >
+      <div className='bg-slate-300 p-6 md:py-12' >
+          <div className='max-w-6xl text-center mx-auto my-10 text-2xl md:text-5xl font-bold' >Find clinical trials near You</div>
+          <div className='flex flex-col lg:flex-row lg:space-x-5 w-fit mx-auto ' >
+            <TextField className='bg-white' label="enter location" />
+            <TextField className='bg-white' label="enter location" />
+            <TextField className='bg-white' label="enter location" />
+            <span className='mt-7 md:mt-0 flex justify-center'>
+              <Button  variant='contained'>Search</Button>
+            </span>
+          </div>
+        </div>
+      <div className='min-h-[95vh] flex flex-col bg-slate-200 justify-center p-4 py-10' >
         <div className=' w-full max-w-5xl mx-auto'>
-          <div className='text-5xl mb-4' >What is Prostate Cancer ?</div>
-          <div className='text-3xl mb-4 font-extralight ' >
+          <div className='text-3xl md:text-5xl mb-4 font-semibold' >What is Prostate Cancer ?</div>
+          <div className='text-lg md:text-3xl mb-4 font-extralight ' >
             Prostate cancer is the most common non-skin cancer in America.
             In the United States, 1 out of every 9 men will be diagnosed with prostate cancer in their lifetime.
             Learn more about the symptoms to watch out for, screening recommendations, causes, and survival rates below.
@@ -18,10 +29,10 @@ function Home() {
       </div>
 
       <div>
-        <div className='min-h-screen flex flex-col justify-center' >
+        <div className='min-h-screen flex flex-col justify-center p-5 md:p-0' >
 
           {/* <div>Clinical Trials</div> */}
-          <div className='text-6xl my-6 mx-auto max-w-5xl text-center font-bold' >
+          <div className='text-3xl md:text-6xl my-6 mx-auto max-w-5xl text-center font-bold' >
             Clinical trials offer hope for many people and an opportunity to help researchers find better treatments for others in the future.
           </div>
           <div className='text-md my-6 mx-auto max-w-4xl text-center font-light'>
@@ -32,24 +43,18 @@ function Home() {
             <ArrowDownward className='animate-bounce' />
           </div>
         </div>
-        <div className='bg-slate-300 md:p-6 md:py-12' >
-          <div className='max-w-6xl text-center mx-auto my-10 text-5xl font-bold' >Find clinical trials near You</div>
-          <div className='flex flex-col lg:flex-row lg:space-x-5 w-fit mx-auto ' >
-            <TextField className='bg-white' label="enter location" />
-            <TextField className='bg-white' label="enter location" />
-            <TextField className='bg-white' label="enter location" />
-            <Button variant='contained'>Search</Button>
-          </div>
-        </div>
+        
       </div>
-      <div className='bg-slate-100 md:p-6' >
-          <div className='max-w-6xl text-center mx-auto my-10 text-5xl font-bold' >Find a support group near You</div>
+      <div className='bg-slate-100 p-6' >
+          <div className='max-w-6xl text-center mx-auto my-10 text-2xl md:text-5xl font-bold' >Find a support group near You</div>
           <div className='flex flex-col lg:flex-row lg:space-x-5 w-fit mx-auto ' >
             <TextField className='bg-white' label="enter location" />
-            <Button variant='contained'>Search</Button>
+            <span className='mt-7 md:mt-0 flex justify-center'>
+              <Button  variant='contained'>Search</Button>
+            </span>
           </div>
         </div>
-      <div className='grid grid-cols-3 gap-6 my-8' >
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 my-8' >
         {
           [1, 1, 1, 1, 1, 1].map((item, index) =>
             <div class="max-w-[350px] m-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-700 dark:border-gray-700">

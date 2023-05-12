@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation, } from 'react-router-dom';
-// import fimg from '../Assets/mokmeta with tagline_color.png'
-// import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import ClearIcon from '@mui/icons-material/Clear';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -68,13 +68,13 @@ const Navbar = () => {
         <div onClick={handleNav} className='block md:hidden z-10 pr-5'>
           {nav ? (
             <span style={{ color: `${textColor}` }} >
-                +
+                <ClearIcon/>
             </span>
             // <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
           ) : (
               // <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
               <span style={{ color: `${textColor2}` }} >
-            +
+                <MenuIcon/>
             </span>  
           )}
         </div>

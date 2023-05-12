@@ -5,19 +5,19 @@ import React from 'react'
 function About() {
   return (
      <div className='pt-10'>
-      <div className='min-h-screen flex flex-col bg-slate-200 justify-center' >
+      <div className='min-h-screen p-6 flex flex-col bg-slate-200 justify-center' >
         <div className=' w-full max-w-5xl mx-auto'>
-          <div className='text-5xl mb-4' >Who are we ? </div>
-          <div className='text-3xl mb-4 font-extralight ' >
+          <div className='text-3xl md:text-5xl mb-4' >Who are we ? </div>
+          <div className='text:2xl md:text-3xl mb-4 font-extralight ' >
             Est et do ea ea anim in tempor. Irure ea mollit minim laborum velit reprehenderit aute voluptate sit culpa sint sit in. Nostrud anim dolore labore labore Lorem consequat elit enim consequat excepteur aliquip dolor. Sint magna pariatur in consequat incididunt .
           </div>
           {/* <Button variant='contained' className='mt-4' >More</Button> */}
         </div>
       </div>
-      <div className='w-[90%] m-auto md:p-10 ' >
+      <div className='w-[90%] m-auto py-6 md:p-10 ' >
         <div className='text-4xl my-2' >Quick Links</div>
         <div className='text-md font-extralight' >Access The Information and Resources You Need</div>
-        <div className='grid grid-cols-3 gap-10 my-10' >
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 my-10' >
           <div className='flex justify-between border hover:bg-slate-200 transition duration-300 border-black rounded-md p-3 group' >
             <div>Find A  screening</div>
             <span className=' transition duration-300 group-hover:-rotate-45' >
@@ -40,7 +40,7 @@ function About() {
       </div>
 
       <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div class="text-center md:border-r">
             <h6 class="text-4xl font-bold lg:text-5xl xl:text-6xl">144K</h6>
             <p class="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
@@ -104,43 +104,19 @@ function About() {
         </section>
       </div>
       <div className='flex flex-col md:flex-row p-7 mt-[5vh]'>
-        <div className='md:w-2/5 text-4xl md:sticky top-[300px] items-start font-bold pt-7' >Your Questions Answered</div>
-        <div className='md:w-3/5 text-[25px] md:text-[25px] text-left '>
-          <div>
-            <div className='group cursor-pointer p-5 py-7 border border-transparent border-b-black h-fit transform duration-500' >Is it free to sign up and create a talent profile on Werkday?
-              <div className='h-0 overflow-hidden transform group-hover:h-auto group-hover:overflow-visible duration-500 group-hover:py-10 cursor-pointer text-base'>
+        <div className='md:w-2/5 text-3xl md:text-4xl md:sticky top-[300px] items-start font-bold pt-7' >Your Questions Answered</div>
+        <div className='md:w-3/5 text-[18px] md:text-[25px] text-left '>
+          {
+            [1,1,1,1,1].map((item, index) => 
+              <div>
+            <div className='group cursor-pointer font-bold py-7 border border-transparent border-b-black h-fit transform duration-500' >Is it free to sign up and create a talent profile ?
+              <div className='h-0 overflow-hidden font-light transform group-hover:h-auto group-hover:overflow-visible duration-500 group-hover:py-4 md:group-hover:py-10 cursor-pointer text-base'>
                 Yes, it's completely free to sign up and create a talent profile on our platform.
               </div>
             </div>
           </div>
-          <div>
-            <div className='group cursor-pointer p-5 py-7 border border-transparent border-b-black h-fit transform duration-500' >What types of companies and job opportunities can I find on Werkday?
-              <div className='h-0 overflow-hidden transform group-hover:h-auto group-hover:overflow-visible duration-500 group-hover:py-10 cursor-pointer text-base'>
-                Our platform connects you with top-quality companies across various industries and fields, offering job opportunities for software development, devops engineers, AI specialists, SAP specialists, product managers, UX/UI designers, and more.
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className='group cursor-pointer p-5 py-7 border border-transparent border-b-black h-fit transform duration-500' >Can I communicate directly with hiring companies on Werkday?
-              <div className='h-0 overflow-hidden transform group-hover:h-auto group-hover:overflow-visible duration-500 group-hover:py-10 cursor-pointer text-base'>
-                Yes, after your application has been shortlisted, you can connect and communicate directly with hiring companies through our platform to discuss job requirements, answer questions, and schedule interviews.
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className='group cursor-pointer p-5 py-7 border border-transparent border-b-black h-fit transform duration-500' > How do I increase my chances of getting hired through Werkday?
-              <div className='h-0 overflow-hidden transform group-hover:h-auto group-hover:overflow-visible duration-500 group-hover:py-10 cursor-pointer text-base'>
-                Make sure to create a strong talent profile that showcases your skills and experience, apply to job opportunities that align with your career goals.
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className='group cursor-pointer p-5 py-7 border border-transparent border-b-black h-fit transform duration-500' >What if I'm not satisfied with the job opportunity I get through your platform?
-              <div className='h-0 overflow-hidden transform group-hover:h-auto group-hover:overflow-visible duration-500 group-hover:py-10 cursor-pointer text-base'>
-                We offer a satisfaction guarantee for all of our talent. If you are not satisfied with the job opportunity you get through our platform, we will work with you to find a suitable replacement
-              </div>
-            </div>
-          </div>
+          )
+        }
         </div>
       </div>
     </div>

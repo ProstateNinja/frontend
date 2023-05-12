@@ -5,16 +5,16 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 function Contact() {
     return (
         <div className='py-20 bg-gradient-to-t from-blue-300 to-transparent' >
-            <div className='min-h-screen flex flex-col justify-evenly w-screen'>
+            <div className='min-h-screen p-4 md:p-0 flex flex-col justify-evenly w-screen'>
                 <div className='flex flex-col my-10' >
-                    <div className='text-6xl font-bold text-center' >Let's Connect</div>
-                    <div className='text-lg my-3 font-extralight text-center' >Let us Know How We can Help You</div>
+                    <div className='text-4xl md:text-6xl font-bold text-center' >Let's Connect</div>
+                    <div className='text-base md:text-xl my-1 md:my-3 font-extralight text-center' >Let us Know How We can Help You</div>
                 </div>
-                <div className='flex items-center max-w-[1300px] w-full mx-auto py-10' >
-                    <div className='w-1/2 flex justify-center items-center' >
+                <div className='flex flex-col md:flex-row items-center max-w-[1300px] w-full mx-auto py-10' >
+                    <div className='md:w-1/2 flex justify-center items-center h-24' >
                         <LocationOnIcon sx={{ width: 40 }} />
                     </div>
-                    <div className='w-1/2' >
+                    <div className='md:w-1/2' >
                         <p className='text-3xl my-3' >
                             Contact Information
                         </p>
@@ -32,8 +32,8 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className='flex md:w-[90%] mx-auto bg-white py-5 rounded-xl p-16' >
-                <div className='w-1/2' >
+            <div className='flex flex-col md:flex-row w-[94%] md:w-[90%] mx-auto bg-white p-5 rounded-xl ' >
+                <div className='md:w-1/2' >
                     <p className='text-3xl my-10' >Send a message</p>
                     <table className='w-full my-12' >
                         <tr>
@@ -50,12 +50,12 @@ function Contact() {
                         </tr>
                     </table>
                     <Button variant='contained'>Send</Button>
-                    <div className='my-5' >
+                    <div className='my-5 flex text-sm items-center md:text-base' >
                         <Checkbox />
                         <>I have read and accept the Privacy Policy</>
                     </div>
                 </div>
-                <div className='w-1/2 flex justify-center items-center' >
+                <div className='md:w-1/2 flex justify-center items-center h-20' >
                     globe image
                 </div>
             </div>
