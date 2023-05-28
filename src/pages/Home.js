@@ -1,6 +1,7 @@
 import { ArrowDownward } from '@mui/icons-material'
 import { Button, TextField } from '@mui/material'
 import React from 'react'
+import docImg from '../assets/doc.png' 
 
 function Home() {
   return (
@@ -26,6 +27,21 @@ function Home() {
           </div>
           <Button variant='contained' className='mt-4' >More</Button>
         </div>
+      </div>
+
+      <div className='min-h-[95vh] p-4 py-10 flex flex-col' >
+        <div className=' text-center text-3xl font-bold my-5' >Medical Services of The Specialties</div>
+        <div className=' text-center text-xl font-light' >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since</div>
+        <div className=' grid grid-cols-3 gap-4 gap-y-24 m-auto w-[90%] ' >
+         {
+          [1,1,1,1,1,1].map((item) => 
+            <div className='flex justify-center items-center cursor-pointer ' >
+              <div className='p-16 rounded-full bg-violet-600 ' ></div>
+            </div>
+          )
+         }
+        </div>
+
       </div>
 
       <div>
@@ -73,6 +89,22 @@ function Home() {
               </div>
             </div>)
         }
+      </div>
+      <div className='flex flex-col md:flex-row-reverse p-2 md:p-10' >
+        <div className='md:w-1/2' >
+          <img src={docImg} alt=""/>
+        </div>
+        <div className='md:w-1/2 flex flex-col justify-evenly md:pl-4 ' >
+            <div className='text-3xl text-green-500 ' >Why choose us</div>
+            {
+              [1,1,1,1].map((item) => 
+                <div className='text-xl' >
+                  <div className='font-extrabold' >What Makes Prostate Ninja Health Services Unique?</div>
+                  <div className=' text-md font-light'> Fugiat pariatur culpa dolor aute.Eiusmod commodo eiusmod duis ad culpa proident aliqua.</div>
+                </div>
+              )
+            }
+        </div>
       </div>
     </div>
   )
